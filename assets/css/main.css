@@ -82,7 +82,9 @@ h2 {
   font-size: 1.6em;
 }
 
-h4, h5, .leading {
+h4,
+h5,
+.leading {
   font-size: 1.1em;
 }
 
@@ -97,6 +99,7 @@ li {
   display: grid;
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
 }
 
 .site-nav {
@@ -174,6 +177,31 @@ li {
 .portfolio a * {
   margin: 0 20px;
   max-width: 40%;
+}
+
+.skills {
+  padding: 30px 20px;
+  background: #07083e;
+}
+
+.skills h3 {
+  text-align: center;
+}
+
+.skills ul {
+  margin: 40px 0;
+}
+
+.skills ul li {
+  padding: 10px;
+  grid-column: span 4;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.skills ul img {
+  height: 80px;
+  margin: 10px auto;
 }
 
 @media (min-width: 960px) {

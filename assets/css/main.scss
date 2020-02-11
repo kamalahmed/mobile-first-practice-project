@@ -70,17 +70,18 @@ h6 {
   font-weight: normal;
 }
 
-
 h1,
 h3 {
   font-size: 1.2em;
 }
 
 h2 {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
-h4, h5, .leading{
-    font-size: 1.1em;
+h4,
+h5,
+.leading {
+  font-size: 1.1em;
 }
 
 p,
@@ -89,71 +90,94 @@ li {
   color: $text-secondary;
 }
 
-
 // Mobile Styles
 .grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
 }
 
 .site-nav {
-    margin: 0 20px;
+  margin: 0 20px;
 
-    ul {
-        display: none;
-    }
-    h1 {
-        grid-column: 1/4;
-        grid-row: 1;
-        padding-bottom: 10px;
-        border-bottom: 3px solid $primary;
-    }
+  ul {
+    display: none;
+  }
+  h1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid $primary;
+  }
 }
 
 .welcome {
-    padding: 0 20px 20px;
-    .welcome-text{
-        grid-column: 1/6;
+  padding: 0 20px 20px;
+  .welcome-text {
+    grid-column: 1/6;
+  }
+  .welcome-img {
+    grid-column: 6/9;
+    img {
+      width: 200%; // display image 200% of the grid wdith
     }
-    .welcome-img {
-        grid-column: 6/9;
-        img {
-            width: 200%; // display image 200% of the grid wdith
-        }
-    }
-    .button {
-        margin: 20px 0;
-    }
+  }
+  .button {
+    margin: 20px 0;
+  }
 }
-
 
 .portfolio {
-    background: url("../images/square_bg.png");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    padding: 30px 20px;
+  background: url("../images/square_bg.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
 
-    h3 {
-        margin-bottom: 0;
-        text-align: center;
-    }
-    h4 {
-        color: $text-secondary;
-    }
+  h3 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  h4 {
+    color: $text-secondary;
+  }
 
-    a {
-        grid-column: 1/9;
-        margin: 20px 0;
-        display: flex;
-        align-items: center;
-    }
-    a * {
-        margin: 0 20px;
-        max-width: 40%;
-    }
+  a {
+    grid-column: 1/9;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  a * {
+    margin: 0 20px;
+    max-width: 40%;
+  }
 }
 
+.skills {
+  padding: 30px 20px;
+  background: #07083e;
+
+  h3 {
+    text-align: center;
+  }
+
+  ul {
+    margin: 40px 0;
+
+    li {
+      padding: 10px;
+      grid-column: span 4; // we defined 8 columns grid. let each item take 4 columns space using span. 1/4 would tell them to take 4 columns from beginning of the grid.
+      text-align: center;
+      background: rgba($color: #000000, $alpha: 0.2);
+    }
+
+    img {
+      height: 80px;
+      margin: 10px auto;
+    }
+  }
+}
 
 // Small tablet Styles
 @media (min-width: 620px) {
