@@ -1,8 +1,10 @@
 // Variables
-:root {
-    --primary: #ffc636;
-    --secondary: #0a0b5b;
-}
+
+$primary: #ffc636;
+$secondary: #0a0b5b;
+$text: #dddbff;
+
+
 // Reset
 body, p, a, ul, li{
     margin: 0;
@@ -19,23 +21,26 @@ ul {
 // Base Styles
 
 body {
-    background: var(--secondary);
+    background: $secondary;
+    color: $text;
     overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+
 }
 
 .button {
     display: inline-block;
     background: none;
-    color: var(--primary);
+    color: $primary;
     padding: 6px 12px;
-    border: 2px solid var(--primary);
+    border: 2px solid $primary;
     border-radius: 20px;
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba($color: #000000, $alpha: .6);
 
     &:hover {
         color: #222;
-        background: var(--primary);
+        background: $primary;
     }
 }
 
@@ -45,8 +50,11 @@ input, textarea {
     border-radius: 20px;
     border: 2px solid #9893d8;
     resize: none;
-    color: #fff;
+    color: $text;
     outline: none;
+}
+::placeholder{
+    color: darken( $text, 10);
 }
 
 // Fonts
