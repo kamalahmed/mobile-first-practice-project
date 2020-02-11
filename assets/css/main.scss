@@ -1,0 +1,69 @@
+// Variables
+:root {
+    --primary: #ffc636;
+    --secondary: #0a0b5b;
+}
+// Reset
+body, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+// Base Styles
+
+body {
+    background: var(--secondary);
+    overflow-x: hidden;
+}
+
+.button {
+    display: inline-block;
+    background: none;
+    color: var(--primary);
+    padding: 6px 12px;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba($color: #000000, $alpha: .6);
+
+    &:hover {
+        color: #222;
+        background: var(--primary);
+    }
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+    resize: none;
+    color: #fff;
+    outline: none;
+}
+
+// Fonts
+
+// Mobile Styles
+
+// Small tablet Styles
+@media (min-width: 620px) {
+
+}
+
+// laptop & large Table Styles
+@media (min-width: 960px) {
+    
+}
+
+// Desktop Styles
+@media (min-width: 1200px) {
+    
+}
