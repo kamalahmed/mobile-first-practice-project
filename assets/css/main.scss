@@ -198,6 +198,35 @@ li {
   }
 }
 
+
+.footer {
+    background-color: #14153d;
+    background-image: url("../images/footer_image.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 30px 20px;
+
+    .copyright {
+        grid-column: 1/4;
+        font-size: 0.8em;
+    }
+
+    .social {
+        grid-column: 7/9;
+        display: flex;
+        justify-content: flex-end;
+        li {
+            margin: 0 6px;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+
+}
+
 // Small tablet Styles
 @media (min-width: 620px) {
 }

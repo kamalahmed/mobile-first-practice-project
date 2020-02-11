@@ -231,6 +231,42 @@ li {
   width: 200px;
 }
 
+.footer {
+  background-color: #14153d;
+  background-image: url("../images/footer_image.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 30px 20px;
+}
+
+.footer .copyright {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  font-size: 0.8em;
+}
+
+.footer .social {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-column: 7/9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .social li {
+  margin: 0 6px;
+}
+
+.footer .social img {
+  width: 20px;
+}
+
 @media (min-width: 960px) {
   body {
     font-size: 18px;
