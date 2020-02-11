@@ -3,75 +3,109 @@
 $primary: #ffc636;
 $secondary: #0a0b5b;
 $text: #dddbff;
-
+$text-secondary: #9893d8;
 
 // Reset
-body, p, a, ul, li{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-
-
 
 // Base Styles
 
 body {
-    background: $secondary;
-    color: $text;
-    overflow-x: hidden;
-    font-family: 'Rubik', sans-serif;
-
+  background: $secondary;
+  color: $text;
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
 }
 
 .button {
-    display: inline-block;
-    background: none;
-    color: $primary;
-    padding: 6px 12px;
-    border: 2px solid $primary;
-    border-radius: 20px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 3px rgba($color: #000000, $alpha: .6);
+  display: inline-block;
+  background: none;
+  color: $primary;
+  padding: 6px 12px;
+  border: 2px solid $primary;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba($color: #000000, $alpha: 0.6);
 
-    &:hover {
-        color: #222;
-        background: $primary;
-    }
+  &:hover {
+    color: #222;
+    background: $primary;
+  }
 }
 
-input, textarea {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 10px 16px;
-    border-radius: 20px;
-    border: 2px solid #9893d8;
-    resize: none;
-    color: $text;
-    outline: none;
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid $text-secondary;
+  resize: none;
+  color: $text;
+  outline: none;
 }
-::placeholder{
-    color: darken( $text, 10);
+::placeholder {
+  color: darken($color: $text-secondary, $amount: 10);
 }
 
 // Fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text;
+  font-weight: normal;
+}
+
+
+h1,
+h3 {
+  font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+h4, h5, .leading{
+    font-size: 1.1em;
+}
+
+p,
+a,
+li {
+  color: $text-secondary;
+}
+
 
 // Mobile Styles
 
 // Small tablet Styles
 @media (min-width: 620px) {
-
 }
 
 // laptop & large Table Styles
 @media (min-width: 960px) {
-    
+  body {
+    font-size: 18px;
+  }
 }
 
 // Desktop Styles
 @media (min-width: 1200px) {
-    
+  body {
+    font-size: 20px;
+  }
 }
