@@ -60,6 +60,7 @@
       width: 100%;
       position: absolute;
       transition: all 0.2s ease-out;
+      transform-origin: right;
     }
 
     &:before {
@@ -86,13 +87,11 @@
         background: transparent;
 
         &:before {
-          transform: rotate(-45deg);
-          top: auto;
+          transform: rotate(45deg);
         }
 
         &:after {
-          transform: rotate(45deg);
-          bottom: auto;
+          transform: rotate(-45deg);
         }
       }
     }

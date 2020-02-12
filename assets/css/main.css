@@ -184,6 +184,8 @@ li {
   position: absolute;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 .menu-icon .nav-icon:before {
@@ -207,15 +209,13 @@ li {
 }
 
 .menu-toggle-check:checked ~ .logo-wrap .nav-icon:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: auto;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .menu-toggle-check:checked ~ .logo-wrap .nav-icon:after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  bottom: auto;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media (min-width: 650px) {
