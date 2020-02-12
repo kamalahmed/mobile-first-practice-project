@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mobile First Responsive Landing Page</title>
+    <title>Mobile First Responsive Portfolio Page</title>
     <link
       href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
       rel="stylesheet"
@@ -15,6 +15,7 @@
   <body>
     <nav class="site-nav grid">
       <input type="checkbox" id="menu-toggle-check" class="menu-toggle-check" />
+
       <div class="logo-wrap">
         <h1><a href="/" class="logo">Kamal Ahmed</a></h1>
         <div class="mobile-menu-toggle">
@@ -23,6 +24,7 @@
           ></label>
         </div>
       </div>
+      <!-- end .logo-wrap -->
 
       <ul class="menu">
         <li><a href="#home" class="active">Home</a></li>
@@ -30,6 +32,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <!-- end .logo-wrap -->
     </nav>
     <!-- ends .site-nav -->
 
@@ -115,6 +118,11 @@
         <ul class="social">
           <li>
             <a href="#"
+              ><img src="assets/images/icon_github.svg" alt="Social Image"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
               ><img src="assets/images/icon_fb.svg" alt="Social Image"
             /></a>
           </li>
@@ -126,6 +134,25 @@
         </ul>
       </div>
     </footer>
-    <!-- end footer -->
+    <!-- end .footer -->
+
+    <div class="scrolltop-wrap">
+      <a href="#" role="button" aria-label="Scroll to top">
+        <svg
+          height="48"
+          viewBox="0 0 48 48"
+          width="48"
+          height="48px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path id="scrolltop-bg" d="M0 0h48v48h-48z"></path>
+          <path
+            id="scrolltop-arrow"
+            d="M14.83 30.83l9.17-9.17 9.17 9.17 2.83-2.83-12-12-12 12z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+    <!-- end .scrolltop-wrap -->
   </body>
 </html>
